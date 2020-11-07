@@ -65,14 +65,14 @@ namespace SubscriptionTest
         {
            
             var result = sub.PostUnSubscription(1, 1);
-            Assert.That(result.Status, Is.True);
+            Assert.That(result.Status, Is.False) ;
         }
         [Test]
         public void PostUnsubscribe_PaymentDue_returnNull()
         {
            
             var result = sub.PostUnSubscription(1, 3);
-            Assert.That(result.Status, Is.False);
+            Assert.That(result.Status, Is.True);
         }
 
         

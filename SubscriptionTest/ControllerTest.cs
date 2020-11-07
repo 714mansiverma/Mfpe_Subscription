@@ -1,6 +1,7 @@
 ﻿using Castle.Components.DictionaryAdapter;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.VisualBasic;
+using Microsoft.VisualStudio.TestPlatform.ObjectModel;
 using Moq;
 using NUnit.Framework;
 using SubscriptionService.Controllers;
@@ -28,18 +29,7 @@ namespace SubscriptionTest
 
         };
 
-        PrescriptionDetails pre1 = new PrescriptionDetails()
-        {
-            DoctorName = "abc",
-            DrugName = "Dispr",
-            Id = 1,
-            InsurancePolicyNumber = 2,
-            InsuranceProvider = "xyz",
-            PrescriptionDate = DateAndTime.Now,
-            RefillOccurrence = "Weekly"
-
-        };
-        [SetUp]
+         [SetUp]
         public void Setup()
         {
             _prod = new Mock<ISubscribeProvider>();
@@ -65,10 +55,14 @@ namespace SubscriptionTest
             Assert.That(value.Status, Is.True);
 
         }
-        [Test]
-        public void PostSubscribe_prescriptionisnull_returnobject()
+        [TestCase(null,"abc",1)]
+        [TestCase(null,null,1)]
+        [TestCase(null,"",1)]
+        [TestCase(null,null,-1)]
+        [TestCase(null, null,0)]
+        public void PostSubscribe_prescriptionisnull_returnobject(PrescriptionDetails prescription, string policy, int MemberId)
         {
-            var result = (BadRequestResult)sub.PostSubscribe(null, null, -1);
+            var result = (BadRequestResult)sub.PostSubscribe(prescription, policy, MemberId);
             Assert.AreEqual(result.StatusCode,400);
         }
        
@@ -94,10 +88,16 @@ namespace SubscriptionTest
         }
        
        
-        [Test]
-        public void PostUnSubscribe_whennegativevaluepassed_returnobject()
+        [TestCase(-1,1)]
+        [TestCase(-1, -1)]
+        [TestCase(0, 1)]
+        [TestCase(1, 0)]
+        [TestCase(-1, 0)]
+        [TestCase(0, -1)]
+        [TestCase(1, -1)]
+        public void PostUnSubscribe_whennegativevaluepassed_returnobject(int MemberId,int SubscriptionId)
         {
-            var result = (BadRequestResult)sub.PostUnsubscribe(-1, -1);
+            var result = (BadRequestResult)sub.PostUnsubscribe(MemberId,SubscriptionId);
             Assert.AreEqual(result.StatusCode, 400);
         }
         

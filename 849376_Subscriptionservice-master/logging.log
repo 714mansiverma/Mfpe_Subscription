@@ -1068,3 +1068,85 @@ INFO  02:04:43 UnSubscribe Request is raised from client side for subscriptionid
 INFO  02:04:43 Checking for Subscriptionid= 3
 INFO  02:04:43 Interacting with refill microservice for the payment status for subscription id =3
 INFO  02:04:43 Number of Refills pending for payment1for subscriptionId3
+INFO  03:05:52 Application started. Press Ctrl+C to shut down.
+INFO  03:05:52 Application started. Press Ctrl+C to shut down.
+INFO  03:05:52 Hosting environment: Development
+INFO  03:05:52 Hosting environment: Development
+INFO  03:05:52 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  03:05:52 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  03:10:03 Subscription Request is raised from client side  for Drug= Disprin
+INFO  03:10:03 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  03:10:03 Disprin Drug Available
+INFO  03:12:46 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  03:12:46 Checking for Subscriptionid= 1
+INFO  03:12:46 Interacting with refill microservice for the payment status for subscription id =1
+INFO  03:12:46 Number of Refills pending for payment0for subscriptionId1
+INFO  03:12:50 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  03:12:50 Checking for Subscriptionid= 3
+INFO  03:12:50 Interacting with refill microservice for the payment status for subscription id =3
+INFO  03:12:50 Number of Refills pending for payment1for subscriptionId3
+INFO  04:56:52 Application started. Press Ctrl+C to shut down.
+INFO  04:56:52 Application started. Press Ctrl+C to shut down.
+INFO  04:56:52 Hosting environment: Development
+INFO  04:56:52 Hosting environment: Development
+INFO  04:56:52 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  04:56:52 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  04:59:43 Subscription Request is raised from client side  for Drug= Dispr
+INFO  04:59:43 DruApi is being called to check for the availability of the DrugName= Dispr
+INFO  04:59:44 Dispr Drug NotAvailable
+INFO  05:00:05 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:00:05 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  05:00:05 Disprin Drug Available
+INFO  05:00:09 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:00:09 Checking for Subscriptionid= 1
+INFO  05:00:09 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:00:09 Number of Refills pending for payment0for subscriptionId1
+INFO  05:00:11 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:00:11 Checking for Subscriptionid= 3
+INFO  05:00:11 Interacting with refill microservice for the payment status for subscription id =3
+INFO  05:00:11 Number of Refills pending for payment1for subscriptionId3
+INFO  05:03:28 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:03:28 Checking for Subscriptionid= 3
+INFO  05:03:28 Interacting with refill microservice for the payment status for subscription id =3
+INFO  05:03:28 Number of Refills pending for payment1for subscriptionId3
+INFO  05:03:40 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:03:40 Checking for Subscriptionid= 1
+INFO  05:03:40 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:03:40 Number of Refills pending for payment0for subscriptionId1
+INFO  05:07:12 Subscription Request is raised from client side  for Drug= Paracetamol
+INFO  05:07:12 DruApi is being called to check for the availability of the DrugName= Paracetamol
+INFO  05:07:12 Paracetamol Drug Available
+INFO  05:27:58 Application started. Press Ctrl+C to shut down.
+INFO  05:27:58 Application started. Press Ctrl+C to shut down.
+INFO  05:27:58 Hosting environment: Development
+INFO  05:27:58 Hosting environment: Development
+INFO  05:27:58 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:27:58 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:28:27 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:28:27 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  05:28:28 Disprin Drug Available
+INFO  07:23:40 Application started. Press Ctrl+C to shut down.
+INFO  07:23:40 Application started. Press Ctrl+C to shut down.
+INFO  07:23:40 Hosting environment: Development
+INFO  07:23:40 Hosting environment: Development
+INFO  07:23:40 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  07:23:40 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  07:24:48 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  07:24:48 Checking for Subscriptionid= 3
+INFO  07:24:48 Interacting with refill microservice for the payment status for subscription id =3
+INFO  07:24:49 Number of Refills pending for payment1for subscriptionId3
+INFO  07:25:11 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  07:25:11 Checking for Subscriptionid= 1
+INFO  07:25:11 Interacting with refill microservice for the payment status for subscription id =1
+INFO  07:25:11 Number of Refills pending for payment0for subscriptionId1
+INFO  07:25:45 Subscription Request is raised from client side  for Drug= 12354
+INFO  07:25:45 DruApi is being called to check for the availability of the DrugName= 12354
+INFO  07:25:45 12354 Drug NotAvailable
+INFO  07:26:35 Subscription Request is raised from client side  for Drug= 123
+INFO  07:26:35 DruApi is being called to check for the availability of the DrugName= 123
+INFO  07:26:35 123 Drug NotAvailable
+INFO  07:26:55 Subscription Request is raised from client side  for Drug= Disprin
+INFO  07:26:55 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  07:26:55 Disprin Drug Available
+INFO  07:26:58 UnSubscribe Request is raised from client side for subscriptionid = 4
+INFO  07:26:58 Checking for Subscriptionid= 4

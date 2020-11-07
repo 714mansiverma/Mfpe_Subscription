@@ -27,7 +27,7 @@ namespace SubscriptionService.Repository
         public SubscriptionDetails PostSubscription(PrescriptionDetails prescription, string PolicyDetails, int Member_Id)
         {
             _log4net.Info("DruApi is being called to check for the availability of the DrugName= "+prescription.DrugName);
-            // Drug drug = new Drug() { DrugId = 1, EpiryDate = new DateTime(1999, 12, 20), Id = 1, ManufactureDate = Convert.ToDateTime("2020-12-01 01:01:00 AM"), ManufacturerName = "XYZ", Name = "Paracetamol" };
+            
             List<LocationWiseDrug> location = new List<LocationWiseDrug>();
               var drugs = "";
               var query = prescription.DrugName;
@@ -43,8 +43,8 @@ namespace SubscriptionService.Repository
             }
             
 
-              if (result.IsSuccessStatusCode)
-              {
+            if (result.IsSuccessStatusCode)
+            {
                   drugs = result.Content.ReadAsStringAsync().Result;
                 location= JsonConvert.DeserializeObject<List<LocationWiseDrug>>(drugs);
 
@@ -75,7 +75,8 @@ namespace SubscriptionService.Repository
                 {
                     _log4net.Info("Interacting with refill microservice for the payment status for subscription id =" + Subscription_Id);
 
-               
+                try
+                {
 
                     using (var httpClient = new HttpClient())
                     {
@@ -103,10 +104,16 @@ namespace SubscriptionService.Repository
                                 details.Remove(unsubscribe);
                             }
 
-                            
+
                         }
                     }
-                             return result;
+                }
+                catch(Exception ex)
+                {
+                    _log4net.Error(ex.Message);
+                }
+                    return result;
+
                 }
                 return null;
             

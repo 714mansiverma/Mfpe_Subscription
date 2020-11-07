@@ -29,27 +29,44 @@ namespace SubscriptionService.Controllers
         [HttpPost("{PolicyDetails}/{MemberId}")]
         public IActionResult PostSubscribe([FromBody] PrescriptionDetails details,[FromRoute] string PolicyDetails, int MemberId)
         {
-            
-            if(details==null || PolicyDetails==null || MemberId<=0)
+            SubscriptionDetails data = new SubscriptionDetails() ;
+            try
             {
-                _log4net.Info("PrescriptionDetails is null or "+ "MemberId is= "+MemberId+" PolicyDetails is= "+PolicyDetails + " less or equal to  zero");
-                return BadRequest();
-            }
-            _log4net.Info("Subscription Request is raised from client side  for Drug= " + details.DrugName);
+                if (details == null || PolicyDetails == null || MemberId <= 0)
+                {
+                    _log4net.Info("PrescriptionDetails is null or " + "MemberId is= " + MemberId + " PolicyDetails is= " + PolicyDetails + " less or equal to  zero");
+                    return BadRequest();
+                }
+                _log4net.Info("Subscription Request is raised from client side  for Drug= " + details.DrugName);
 
-            return Ok(Provider.Subscribe(details,PolicyDetails,MemberId));
+                 data=Provider.Subscribe(details, PolicyDetails, MemberId);
+            }
+            catch(Exception ex)
+            {
+                _log4net.Error("Error occured in Controller " + ex.Message);
+            }
+            return Ok(data);
         }
      
         [HttpPost("{MemberId}/{SubscriptionId}")]
         public IActionResult PostUnsubscribe([FromRoute]int MemberId,int SubscriptionId)
         {
-            _log4net.Info("UnSubscribe Request is raised from client side for subscriptionid = "+SubscriptionId);
-            if(MemberId <=0 || SubscriptionId<=0)
+            SubscriptionDetails data = new SubscriptionDetails();
+            _log4net.Info("UnSubscribe Request is raised from client side for subscriptionid = " + SubscriptionId);
+            try
             {
-                _log4net.Info("MemberId is"+MemberId+ "SubscriptionId is "+ SubscriptionId+ " less or equal to  zero");
-                return BadRequest();
+                if (MemberId <= 0 || SubscriptionId <= 0)
+                {
+                    _log4net.Info("MemberId is" + MemberId + "SubscriptionId is " + SubscriptionId + " less or equal to  zero");
+                    return BadRequest();
+                }
+                data = Provider.UnSubscribe(MemberId, SubscriptionId);
             }
-            return Ok(Provider.UnSubscribe(MemberId, SubscriptionId));
+            catch(Exception ex)
+            {
+                _log4net.Error("Error occured in Controller " + ex.Message);
+            }
+            return Ok(data);
         }
         
     }
