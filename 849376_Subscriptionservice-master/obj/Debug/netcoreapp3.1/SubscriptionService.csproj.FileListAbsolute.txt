@@ -149,9 +149,6 @@ C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\bin\D
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.csprojAssemblyReference.cache
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.AssemblyInfoInputs.cache
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.AssemblyInfo.cs
-C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.csproj.CoreCompileInputs.cache
-C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.MvcApplicationPartsAssemblyInfo.cs
-C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.MvcApplicationPartsAssemblyInfo.cache
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.RazorTargetAssemblyInfo.cache
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.csproj.CopyComplete
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\staticwebassets\SubscriptionService.StaticWebAssets.Manifest.cache
@@ -159,3 +156,6 @@ C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\D
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.dll
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.pdb
 C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.genruntimeconfig.cache
+C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.csproj.CoreCompileInputs.cache
+C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.MvcApplicationPartsAssemblyInfo.cs
+C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master\obj\Debug\netcoreapp3.1\SubscriptionService.MvcApplicationPartsAssemblyInfo.cache

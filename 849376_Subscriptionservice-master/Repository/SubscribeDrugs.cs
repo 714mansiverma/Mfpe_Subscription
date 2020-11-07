@@ -19,9 +19,9 @@ namespace SubscriptionService.Repository
         public SubscribeDrugs()
         {
             details = new List<SubscriptionDetails>() {
-                new SubscriptionDetails{ Id=1, MemberId=201, MemberLocation="Delhi", PrescriptionId=101, RefillOccurrence="weekly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
-                new SubscriptionDetails{ Id=2, MemberId=202, MemberLocation="Kolkata", PrescriptionId=102, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
-                 new SubscriptionDetails{ Id=3, MemberId=303, MemberLocation="Kolkata", PrescriptionId=103, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")}
+                new SubscriptionDetails{ Id=1, MemberId=1, MemberLocation="Delhi", PrescriptionId=1, RefillOccurrence="weekly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
+                new SubscriptionDetails{ Id=2, MemberId=2, MemberLocation="Kolkata", PrescriptionId=2, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
+                 new SubscriptionDetails{ Id=3, MemberId=1, MemberLocation="Kolkata", PrescriptionId=3, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")}
              };
         }
         public SubscriptionDetails PostSubscription(PrescriptionDetails prescription, string PolicyDetails, int Member_Id)
