@@ -14,15 +14,15 @@ namespace SubscriptionService.Repository
 {
     public class SubscribeDrugs : ISubscribeDrugs
     {
-        static List<SubscriptionDetails> details = new List<SubscriptionDetails>() {
-                new SubscriptionDetails{ Id=1, MemberId=1, MemberLocation="Delhi", PrescriptionId=1, RefillOccurrence="weekly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
-                new SubscriptionDetails{ Id=2, MemberId=2, MemberLocation="Kolkata", PrescriptionId=2, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
-                 new SubscriptionDetails{ Id=3, MemberId=3, MemberLocation="Kolkata", PrescriptionId=3, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")}
-             };
+        static List<SubscriptionDetails> details;
         static readonly log4net.ILog _log4net = log4net.LogManager.GetLogger(typeof(SubscribeController));
         public SubscribeDrugs()
         {
-            
+            details = new List<SubscriptionDetails>() {
+                new SubscriptionDetails{ Id=1, MemberId=201, MemberLocation="Delhi", PrescriptionId=101, RefillOccurrence="weekly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
+                new SubscriptionDetails{ Id=2, MemberId=202, MemberLocation="Kolkata", PrescriptionId=102, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")},
+                 new SubscriptionDetails{ Id=3, MemberId=303, MemberLocation="Kolkata", PrescriptionId=103, RefillOccurrence="Monthly", Status=true, SubscriptionDate= Convert.ToDateTime("2020-12-01 01:01:00 AM")}
+             };
         }
         public SubscriptionDetails PostSubscription(PrescriptionDetails prescription, string PolicyDetails, int Member_Id)
         {
@@ -79,7 +79,7 @@ namespace SubscriptionService.Repository
 
                     using (var httpClient = new HttpClient())
                     {
-                        using (var response = httpClient.GetAsync("https://localhost:44365/api/RefillOrders/RefillDues/RefillDues/" + Subscription_Id).Result)
+                        using (var response = httpClient.GetAsync("https://localhost:44365/api/RefillOrders/RefillDues/" + Subscription_Id).Result)
                         {
 
                             if (!response.IsSuccessStatusCode)
@@ -106,8 +106,8 @@ namespace SubscriptionService.Repository
                             
                         }
                     }
-                return result;
-            }
+                             return result;
+                }
                 return null;
             
         }
