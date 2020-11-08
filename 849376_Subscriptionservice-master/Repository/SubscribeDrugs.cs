@@ -33,19 +33,22 @@ namespace SubscriptionService.Repository
             try
             {
                 result = client.GetAsync("https://localhost:44393/api/DrugsApi/searchDrugsByName/" + query).Result;
+
+
+
+
+                if (!result.IsSuccessStatusCode)
+                {
+                    return null;
+
+                }
             }
             catch (Exception ex)
             {
                 _log4net.Error("Exception occured in calling Drug Api" + nameof(SubscribeDrugs) + " and error is" + ex.Message);
             }
-            
-
-            if (result.IsSuccessStatusCode)
-            {
-                  drugs = result.Content.ReadAsStringAsync().Result;
-                location= JsonConvert.DeserializeObject<List<LocationWiseDrug>>(drugs);
-
-            }
+            drugs = result.Content.ReadAsStringAsync().Result;
+            location = JsonConvert.DeserializeObject<List<LocationWiseDrug>>(drugs);
             if (location.Count!=0)
             {
                 _log4net.Info(prescription.DrugName+" Drug Available");

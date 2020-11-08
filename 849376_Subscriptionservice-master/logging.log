@@ -1532,3 +1532,90 @@ INFO  12:20:35 UnSubscribe Request is raised from client side for subscriptionid
 INFO  12:20:35 Checking for Subscriptionid= 3
 INFO  12:20:35 Interacting with refill microservice for the payment status for subscription id =3
 INFO  12:20:35 Number of Refills pending for payment0for subscriptionId3
+INFO  01:20:31 Application started. Press Ctrl+C to shut down.
+INFO  01:20:31 Application started. Press Ctrl+C to shut down.
+INFO  01:20:31 Hosting environment: Development
+INFO  01:20:31 Hosting environment: Development
+INFO  01:20:32 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:20:32 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:21:25 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:21:25 DruApi is being called to check for the availability of the DrugName= Disprin
+ERROR 01:21:27 Exception occured in calling Drug ApiSubscribeDrugs and error isOne or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  01:23:12 Application started. Press Ctrl+C to shut down.
+INFO  01:23:12 Application started. Press Ctrl+C to shut down.
+INFO  01:23:12 Hosting environment: Development
+INFO  01:23:12 Hosting environment: Development
+INFO  01:23:12 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:23:12 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:24:19 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:24:19 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  01:24:19 Disprin Drug Available
+INFO  01:24:22 UnSubscribe Request is raised from client side for subscriptionid = 4
+INFO  01:24:22 Checking for Subscriptionid= 4
+INFO  01:24:22 Interacting with refill microservice for the payment status for subscription id =4
+INFO  01:24:22 Number of Refills pending for payment0for subscriptionId4
+INFO  01:24:24 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  01:24:24 Checking for Subscriptionid= 3
+INFO  01:24:24 Interacting with refill microservice for the payment status for subscription id =3
+INFO  01:24:24 Number of Refills pending for payment0for subscriptionId3
+INFO  01:24:26 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  01:24:26 Checking for Subscriptionid= 1
+INFO  01:24:26 Interacting with refill microservice for the payment status for subscription id =1
+INFO  01:24:26 Number of Refills pending for payment1for subscriptionId1
+INFO  01:25:26 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  01:25:26 Checking for Subscriptionid= 1
+INFO  01:25:26 Interacting with refill microservice for the payment status for subscription id =1
+INFO  01:25:26 Number of Refills pending for payment1for subscriptionId1
+INFO  01:25:42 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:25:42 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  01:25:42 Disprin Drug Available
+INFO  01:26:09 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:26:09 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  01:26:09 Disprin Drug Available
+INFO  01:26:46 UnSubscribe Request is raised from client side for subscriptionid = 4
+INFO  01:26:46 Checking for Subscriptionid= 4
+INFO  01:26:46 Interacting with refill microservice for the payment status for subscription id =4
+INFO  01:26:46 Number of Refills pending for payment0for subscriptionId4
+INFO  01:26:48 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  01:26:48 Checking for Subscriptionid= 3
+INFO  01:26:48 Interacting with refill microservice for the payment status for subscription id =3
+INFO  01:26:48 Number of Refills pending for payment0for subscriptionId3
+INFO  01:26:50 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  01:26:50 Checking for Subscriptionid= 1
+INFO  01:26:50 Interacting with refill microservice for the payment status for subscription id =1
+INFO  01:26:50 Number of Refills pending for payment1for subscriptionId1
+INFO  01:29:53 Application started. Press Ctrl+C to shut down.
+INFO  01:29:53 Application started. Press Ctrl+C to shut down.
+INFO  01:29:53 Hosting environment: Development
+INFO  01:29:53 Hosting environment: Development
+INFO  01:29:53 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:29:53 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  01:31:17 Subscription Request is raised from client side  for Drug= akdhkd
+INFO  01:31:17 DruApi is being called to check for the availability of the DrugName= akdhkd
+INFO  01:31:18 akdhkd Drug NotAvailable
+INFO  01:31:39 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:31:39 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  01:31:39 Disprin Drug Available
+INFO  01:31:44 UnSubscribe Request is raised from client side for subscriptionid = 4
+INFO  01:31:44 Checking for Subscriptionid= 4
+INFO  01:31:44 Interacting with refill microservice for the payment status for subscription id =4
+INFO  01:31:44 Number of Refills pending for payment0for subscriptionId4
+INFO  01:31:47 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  01:31:47 Checking for Subscriptionid= 3
+INFO  01:31:47 Interacting with refill microservice for the payment status for subscription id =3
+INFO  01:31:47 Number of Refills pending for payment0for subscriptionId3
+INFO  01:31:49 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  01:31:49 Checking for Subscriptionid= 1
+INFO  01:31:49 Interacting with refill microservice for the payment status for subscription id =1
+INFO  01:31:49 Number of Refills pending for payment1for subscriptionId1
+INFO  01:31:50 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  01:31:50 Checking for Subscriptionid= 1
+INFO  01:31:50 Interacting with refill microservice for the payment status for subscription id =1
+INFO  01:31:50 Number of Refills pending for payment1for subscriptionId1
+INFO  01:32:24 Subscription Request is raised from client side  for Drug= Disprin
+INFO  01:32:24 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  01:32:24 Disprin Drug Available
+INFO  01:32:27 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  01:32:27 Checking for Subscriptionid= 3
+INFO  01:32:27 Interacting with refill microservice for the payment status for subscription id =3
+INFO  01:32:27 Number of Refills pending for payment0for subscriptionId3
