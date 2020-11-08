@@ -50,7 +50,7 @@ namespace SubscriptionService.Repository
             {
                 _log4net.Info(prescription.DrugName+" Drug Available");
                 var last = details.Last();
-                SubscriptionDetails subscription= new SubscriptionDetails { Id = (details[details.Count-1].Id+1), MemberId = Member_Id, MemberLocation = "Delhi", PrescriptionId = prescription.Id, RefillOccurrence = prescription.RefillOccurrence, Status = true, SubscriptionDate = DateTime.Now };
+                SubscriptionDetails subscription= new SubscriptionDetails { Id = (details[details.Count-1].Id+1), MemberId = Member_Id, MemberLocation = "Delhi", PrescriptionId = 3, RefillOccurrence = prescription.RefillOccurrence, Status = true, SubscriptionDate = DateTime.Now };
                 details.Add(subscription);
                 return subscription;
             }
