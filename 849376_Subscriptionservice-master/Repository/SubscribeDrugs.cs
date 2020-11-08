@@ -34,9 +34,6 @@ namespace SubscriptionService.Repository
             {
                 result = client.GetAsync("https://localhost:44393/api/DrugsApi/searchDrugsByName/" + query).Result;
 
-
-
-
                 if (!result.IsSuccessStatusCode)
                 {
                     return null;
