@@ -9,6 +9,10 @@ using SubscriptionService.Models;
 using SubscriptionService.Controllers;
 using System.Web.Http;
 using Microsoft.AspNetCore.Mvc;
+using System.Net.Http.Headers;
+using Microsoft.AspNetCore.Http;
+using Microsoft.AspNetCore.Http.Connections;
+using Microsoft.Extensions.Configuration;
 
 namespace SubscriptionService.Repository
 {
