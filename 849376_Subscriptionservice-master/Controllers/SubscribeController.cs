@@ -11,7 +11,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace SubscriptionService.Controllers
 {
-  //  [Authorize]
+    [Authorize]
     [Route("api/[controller]/[action]")]
     [ApiController]
    
@@ -31,14 +31,14 @@ namespace SubscriptionService.Controllers
         {
             SubscriptionDetails data = new SubscriptionDetails() ;
             
-                if (details == null || PolicyDetails == null || MemberId <= 0)
+                if (details == null || PolicyDetails == null || MemberId <= 0 || auth==null)
                 {
                     _log4net.Info("PrescriptionDetails is null or " + "MemberId is= " + MemberId + " PolicyDetails is= " + PolicyDetails + " less or equal to  zero");
                     return BadRequest();
                 }
                 _log4net.Info("Subscription Request is raised from client side  for Drug= " + details.DrugName);
 
-                 data=Provider.Subscribe(details, PolicyDetails, MemberId,string auth);
+                 data=Provider.Subscribe(details, PolicyDetails, MemberId, auth);
            
             return Ok(data);
         }
@@ -49,7 +49,7 @@ namespace SubscriptionService.Controllers
             SubscriptionDetails data = new SubscriptionDetails();
             _log4net.Info("UnSubscribe Request is raised from client side for subscriptionid = " + SubscriptionId);
            
-                if (MemberId <= 0 || SubscriptionId <= 0)
+                if (MemberId <= 0 || SubscriptionId <= 0||auth==null)
                 {
                     _log4net.Info("MemberId is" + MemberId + "SubscriptionId is " + SubscriptionId + " less or equal to  zero");
                     return BadRequest();

@@ -23,7 +23,7 @@ namespace SubscriptionService.Provider
         {
             try
             {
-                return subs.PostSubscription(subscription, PolicyDetails, MemberId, string auth);
+                return subs.PostSubscription(subscription, PolicyDetails, MemberId,  auth);
             }
             catch(Exception ex)
             {
@@ -36,7 +36,7 @@ namespace SubscriptionService.Provider
         {
             try
             {
-                return subs.PostUnSubscription(Member_Id, Subscription_Id,string auth);
+                return subs.PostUnSubscription(Member_Id, Subscription_Id, auth);
             }
             catch(Exception ex)
             {
