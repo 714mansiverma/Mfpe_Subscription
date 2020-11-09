@@ -27,7 +27,7 @@ namespace SubscriptionService.Controllers
         }
         
         [HttpPost("{PolicyDetails}/{MemberId}")]
-        public IActionResult PostSubscribe([FromBody] PrescriptionDetails details,[FromRoute] string PolicyDetails, int MemberId)
+        public IActionResult PostSubscribe([FromBody] PrescriptionDetails details,[FromRoute] string PolicyDetails, int MemberId, [FromHeader(Name="Authorization")] string auth)
         {
             SubscriptionDetails data = new SubscriptionDetails() ;
             
@@ -38,13 +38,13 @@ namespace SubscriptionService.Controllers
                 }
                 _log4net.Info("Subscription Request is raised from client side  for Drug= " + details.DrugName);
 
-                 data=Provider.Subscribe(details, PolicyDetails, MemberId);
+                 data=Provider.Subscribe(details, PolicyDetails, MemberId,string auth);
            
             return Ok(data);
         }
      
         [HttpPost("{MemberId}/{SubscriptionId}")]
-        public IActionResult PostUnsubscribe([FromRoute]int MemberId,int SubscriptionId)
+        public IActionResult PostUnsubscribe([FromRoute]int MemberId,int SubscriptionId, [FromHeader(Name="Authorization")] string auth)
         {
             SubscriptionDetails data = new SubscriptionDetails();
             _log4net.Info("UnSubscribe Request is raised from client side for subscriptionid = " + SubscriptionId);
@@ -54,7 +54,7 @@ namespace SubscriptionService.Controllers
                     _log4net.Info("MemberId is" + MemberId + "SubscriptionId is " + SubscriptionId + " less or equal to  zero");
                     return BadRequest();
                 }
-                data = Provider.UnSubscribe(MemberId, SubscriptionId);
+                data = Provider.UnSubscribe(MemberId, SubscriptionId,auth);
            
             return Ok(data);
         }
