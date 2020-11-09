@@ -1894,3 +1894,86 @@ INFO  05:34:25 UnSubscribe Request is raised from client side for subscriptionid
 INFO  05:34:25 Checking for Subscriptionid= 5
 INFO  05:34:25 Interacting with refill microservice for the payment status for subscription id =5
 INFO  05:34:25 Number of Refills pending for payment1for subscriptionId5
+INFO  05:49:16 Application started. Press Ctrl+C to shut down.
+INFO  05:49:16 Application started. Press Ctrl+C to shut down.
+INFO  05:49:16 Hosting environment: Development
+INFO  05:49:16 Hosting environment: Development
+INFO  05:49:16 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:49:16 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:50:36 Application started. Press Ctrl+C to shut down.
+INFO  05:50:36 Application started. Press Ctrl+C to shut down.
+INFO  05:50:36 Hosting environment: Development
+INFO  05:50:36 Hosting environment: Development
+INFO  05:50:36 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:50:36 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:50:55 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:50:55 Checking for Subscriptionid= 1
+INFO  05:50:55 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:50:57 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:50:57 Checking for Subscriptionid= 1
+INFO  05:50:57 Interacting with refill microservice for the payment status for subscription id =1
+ERROR 05:50:58 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:50:58 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:50:58 Checking for Subscriptionid= 1
+INFO  05:50:58 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:50:59 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:50:59 Checking for Subscriptionid= 1
+INFO  05:50:59 Interacting with refill microservice for the payment status for subscription id =1
+ERROR 05:50:59 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ERROR 05:51:00 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+ERROR 05:51:01 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:51:04 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:51:04 Checking for Subscriptionid= 3
+INFO  05:51:04 Interacting with refill microservice for the payment status for subscription id =3
+ERROR 05:51:06 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:51:43 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:51:43 Checking for Subscriptionid= 1
+INFO  05:51:43 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:51:43 Number of Refills pending for payment1for subscriptionId1
+INFO  05:51:46 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:51:46 Checking for Subscriptionid= 3
+INFO  05:51:46 Interacting with refill microservice for the payment status for subscription id =3
+INFO  05:51:46 Number of Refills pending for payment0for subscriptionId3
+INFO  05:52:03 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:52:03 DruApi is being called to check for the availability of the DrugName= Disprin
+ERROR 05:52:05 Exception occured in calling Drug ApiSubscribeDrugs and error isOne or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:53:41 Application started. Press Ctrl+C to shut down.
+INFO  05:53:42 Application started. Press Ctrl+C to shut down.
+INFO  05:53:42 Hosting environment: Development
+INFO  05:53:42 Hosting environment: Development
+INFO  05:53:42 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:53:42 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:54:32 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:54:32 DruApi is being called to check for the availability of the DrugName= Disprin
+ERROR 05:54:35 Exception occured in calling Drug ApiSubscribeDrugs and error isOne or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:55:36 Application started. Press Ctrl+C to shut down.
+INFO  05:55:36 Application started. Press Ctrl+C to shut down.
+INFO  05:55:36 Hosting environment: Development
+INFO  05:55:36 Hosting environment: Development
+INFO  05:55:36 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:55:36 Content root path: C:\Users\shree\source\repos\Mfpe-Project\849376_Subscriptionservice-master
+INFO  05:56:04 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:56:04 DruApi is being called to check for the availability of the DrugName= Disprin
+ERROR 05:56:06 Exception occured in calling Drug ApiSubscribeDrugs and error isOne or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:56:24 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:56:24 Checking for Subscriptionid= 1
+INFO  05:56:24 Interacting with refill microservice for the payment status for subscription id =1
+ERROR 05:56:26 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:56:29 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:56:29 Checking for Subscriptionid= 3
+INFO  05:56:29 Interacting with refill microservice for the payment status for subscription id =3
+ERROR 05:56:31 One or more errors occurred. (No connection could be made because the target machine actively refused it.)
+INFO  05:57:01 UnSubscribe Request is raised from client side for subscriptionid = 3
+INFO  05:57:01 Checking for Subscriptionid= 3
+INFO  05:57:01 Interacting with refill microservice for the payment status for subscription id =3
+INFO  05:57:01 Number of Refills pending for payment0for subscriptionId3
+INFO  05:57:03 UnSubscribe Request is raised from client side for subscriptionid = 1
+INFO  05:57:03 Checking for Subscriptionid= 1
+INFO  05:57:03 Interacting with refill microservice for the payment status for subscription id =1
+INFO  05:57:03 Number of Refills pending for payment1for subscriptionId1
+INFO  05:57:19 Subscription Request is raised from client side  for Drug= Disprin
+INFO  05:57:19 DruApi is being called to check for the availability of the DrugName= Disprin
+INFO  05:57:19 Disprin Drug Available
+INFO  05:57:37 Subscription Request is raised from client side  for Drug= Dispri
+INFO  05:57:37 DruApi is being called to check for the availability of the DrugName= Dispri
+INFO  05:57:37 Dispri Drug NotAvailable

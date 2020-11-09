@@ -54,6 +54,8 @@ namespace SubscriptionService.Repository
             catch (Exception ex)
             {
                 _log4net.Error("Exception occured in calling Drug Api" + nameof(SubscribeDrugs) + " and error is" + ex.Message);
+
+                return null;
             }
             drugs = result.Content.ReadAsStringAsync().Result;
             location = JsonConvert.DeserializeObject<List<LocationWiseDrug>>(drugs);
@@ -124,6 +126,7 @@ namespace SubscriptionService.Repository
                 catch(Exception ex)
                 {
                     _log4net.Error(ex.Message);
+                    return null;
                 }
                     return result;
 
