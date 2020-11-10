@@ -41,7 +41,7 @@ namespace SubscriptionService.Repository
               
             try
             {
-                var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44393/api/DrugsApi/searchDrugsByName/" + query);
+                var request = new HttpRequestMessage(HttpMethod.Get, "http://20.42.35.247/api/DrugsApi/searchDrugsByName/" + query);
                 request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token[1]);
 
                 result = client.SendAsync(request).Result;
@@ -92,7 +92,7 @@ namespace SubscriptionService.Repository
                     {
                         string[] token=auth.Split(" ");
                         
-                        var request = new HttpRequestMessage(HttpMethod.Get, "https://localhost:44365/api/RefillOrders/RefillDues/" + Subscription_Id);
+                        var request = new HttpRequestMessage(HttpMethod.Get, "http://52.152.205.223/api/RefillOrders/RefillDues/" + Subscription_Id);
                         request.Headers.Authorization = new AuthenticationHeaderValue("Bearer", token[1]);
 
                         using (var response = httpClient.SendAsync(request).Result)
