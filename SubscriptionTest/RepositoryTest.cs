@@ -48,19 +48,11 @@ namespace SubscriptionTest
             sub = new SubscribeDrugs();
 
         }
-        [Test]
-        public void PostSubscribe_WhenCalled_returnobject()
-        {
-
-            var res = sub.PostSubscription(pre, "hello", 1,token);
-            Assert.That(res.Status, Is.True);
-
-        }
-        [Test]
+                [Test]
         public void PostSubscribe_DrugNotAvailable_returnnullObject()
         {
             var res = sub.PostSubscription(pre1, "hello123", 2,token);
-            Assert.That(res.Status, Is.False);
+            Assert.That(res, Is.Null);
         }
         
         [Test]
@@ -70,13 +62,7 @@ namespace SubscriptionTest
             var result = sub.PostUnSubscription(1, 3,token);
             Assert.That(result.Status, Is.False) ;
         }
-        [Test]
-        public void PostUnsubscribe_PaymentDue_returnNull()
-        {
-           
-            var result = sub.PostUnSubscription(1, 1,token);
-            Assert.That(result.Status, Is.True);
-        }
+       
 
         
     }
